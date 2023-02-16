@@ -1,0 +1,47 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit3H
+#define Unit3H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <IdBaseComponent.hpp>
+#include <IdComponent.hpp>
+#include <IdIntercept.hpp>
+#include <IdIOHandler.hpp>
+#include <IdIOHandlerSocket.hpp>
+#include <IdIOHandlerStack.hpp>
+#include <IdTCPClient.hpp>
+#include <IdTCPConnection.hpp>
+#include <Vcl.ExtCtrls.hpp>
+//---------------------------------------------------------------------------
+class TForm1 : public TForm
+{
+__published:	// IDE-managed Components
+	TIdTCPClient *IdTCPClient1;
+	TIdIOHandlerStack *IdIOHandlerStack1;
+	TIdConnectionIntercept *IdConnectionIntercept1;
+	TListBox *ListBox2;
+	TEdit *EditIP;
+	TEdit *EditPort;
+	TButton *btnBaglan;
+	TButton *btnDurdur;
+	TEdit *Edit1;
+	TButton *btnGonder;
+	TTimer *Timer1;
+	TButton *Button1;
+	void __fastcall Timer1Timer(TObject *Sender);
+	void __fastcall btnBaglanClick(TObject *Sender);
+	void __fastcall btnDurdurClick(TObject *Sender);
+	void __fastcall btnGonderClick(TObject *Sender);
+	void __fastcall Button1Click(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm1(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+#endif

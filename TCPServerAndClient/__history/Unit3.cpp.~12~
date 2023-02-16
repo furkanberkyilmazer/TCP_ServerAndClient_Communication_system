@@ -1,0 +1,90 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit3.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Timer1Timer(TObject *Sender)
+{
+   	if(IdTCPClient1->Connected())
+	{
+		if(!IdTCPClient1->Socket->InputBufferIsEmpty())
+		{
+
+			// ListBox2->Items->Add("("+IdTCPClient1->Host+":"+IdTCPClient1->Port+"/"+IdTCPClient1->Socket->Binding->Port+") :"+ IdTCPClient1->Socket->ReadLn());
+			 ListBox2->Items->Add("Gelen Mesaj: "+ IdTCPClient1->Socket->ReadLn());
+		}
+		btnBaglan->Enabled=false;
+	}
+	else
+	{
+		btnBaglan->Enabled=true;
+
+	}
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::btnBaglanClick(TObject *Sender)
+{
+   	if (EditIP->Text!="" || EditPort->Text!="")
+	{
+
+	try {
+	   IdTCPClient1->Host=EditIP->Text;
+	   IdTCPClient1->Port = StrToInt(EditPort->Text);
+	   IdTCPClient1->Connect();
+	} catch (Exception *error) {
+	ShowMessage("Hata mesaji: "+error->Message);
+	}
+
+
+	}
+	else {
+    ShowMessage("Ip ve Port Bilgisi giriniz.");
+	}
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::btnDurdurClick(TObject *Sender)
+{
+   IdTCPClient1->Disconnect();
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::btnGonderClick(TObject *Sender)
+{
+  IdTCPClient1->Socket->WriteLn(Edit1->Text);
+  ListBox2->Items->Add("Giden Mesaj : "+ Edit1->Text);
+
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+  ListBox2->Clear();
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::IdTCPClient1Connected(TObject *Sender)
+{
+ ListBox2->Items->Add(IdTCPClient1->Socket->ReadLn());
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::IdConnectionIntercept1Disconnect(TIdConnectionIntercept *ASender)
+
+{
+  ListBox2->Items->Add("Serverla Baðlantým kesildi.");
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button2Click(TObject *Sender)
+{
+ AnsiString degisken = "yarraaak";
+ ShowMessage(degisken[1]);
+}
+//---------------------------------------------------------------------------
+

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.646,=C:\Users\Admin\Desktop\IndyTCP_Deneme\Unit4.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.405,C:\Users\Admin\Desktop\IndyTCP_Deneme\Unit4.cpp=C:\Users\Admin\Desktop\IndyTCP_Deneme\ReadToServerThread.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.724,C:\Users\Admin\Desktop\IndyTCP_Deneme\Unit2.h=C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.724,C:\Users\Admin\Desktop\IndyTCP_Deneme\Unit2.cpp=C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.891,C:\Users\Admin\Desktop\IndyTCP_Deneme\ReadToServerThread.cpp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.191,=C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.724,C:\Users\Admin\Desktop\IndyTCP_Deneme\Unit2.fmx=C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.057,=C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.941,C:\Users\Admin\Desktop\IndyTCP_Deneme\ProjectClient.cbproj=C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Project2.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.405,C:\Users\Admin\Desktop\IndyTCP_Deneme\Unit4.h=C:\Users\Admin\Desktop\IndyTCP_Deneme\ReadToServerThread.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.894,C:\Users\Admin\Desktop\IndyTCP_Deneme\ProjectClientPCH1.h=C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="ProjectClient.cpp"/>
+    <File Path="ProjectClientPCH1.h"/>
+    <File Path="Unit2.cpp"/>
+    <File Path="Unit2.cpp"/>
+    <File Path="Unit2.fmx"/>
+    <File Path="Unit2.h"/>
+  </ProjectSortOrder>
+</BorlandProject>

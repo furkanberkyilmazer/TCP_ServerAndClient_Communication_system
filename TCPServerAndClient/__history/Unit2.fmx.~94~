@@ -1,0 +1,168 @@
+object FormClient: TFormClient
+  Left = 0
+  Top = 0
+  Caption = 'Multi Device Client'
+  ClientHeight = 288
+  ClientWidth = 938
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object btnBaglan: TButton
+    Position.X = 11.000000000000000000
+    Position.Y = 68.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Ba'#287'lan'
+    OnClick = btnBaglanClick
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Position.X = 12.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Mesaj'#305'n'#305' Gir:'
+  end
+  object btnGonder: TButton
+    Position.X = 12.000000000000000000
+    Position.Y = 198.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'G'#246'nder'
+    OnClick = btnGonderClick
+  end
+  object btnOku: TButton
+    Enabled = False
+    Position.Y = 259.000000000000000000
+    Size.Width = 33.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'Oku'
+    OnClick = btnOkuClick
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 49
+    Top = 232
+  end
+  object EditIP: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 9
+    Text = '192.168.1.236'
+    Position.X = 11.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Ip'
+  end
+  object EditPort: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 10
+    Text = '3060'
+    Position.X = 11.000000000000000000
+    Position.Y = 38.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Port'
+  end
+  object btnDurdur: TButton
+    Position.X = 11.000000000000000000
+    Position.Y = 98.000000000000000000
+    Size.Width = 122.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    Text = 'Durdur'
+    OnClick = btnDurdurClick
+  end
+  object btnTemizle: TButton
+    Position.X = 92.000000000000000000
+    Position.Y = 259.000000000000000000
+    Size.Width = 47.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 17
+    Text = 'Temizle'
+    OnClick = btnTemizleClick
+  end
+  object ListBox2: TListBox
+    Position.X = 147.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 574.000000000000000000
+    Size.Height = 272.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 570.000000000000000000
+    Viewport.Height = 268.000000000000000000
+  end
+  object ListBoxClients: TListBox
+    Position.X = 729.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 272.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 23
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 196.000000000000000000
+    Viewport.Height = 268.000000000000000000
+  end
+  object Button1: TButton
+    Position.X = 40.000000000000000000
+    Position.Y = 138.000000000000000000
+    TabOrder = 30
+    Text = 'Button1'
+  end
+  object IdTCPClient1: TIdTCPClient
+    Intercept = IdConnectionIntercept1
+    IOHandler = IdIOHandlerStack1
+    OnDisconnected = IdTCPClient1Disconnected
+    OnConnected = IdTCPClient1Connected
+    ConnectTimeout = 5000
+    Port = 3000
+    ReadTimeout = 1000
+    Left = 171
+    Top = 56
+  end
+  object IdIOHandlerStack1: TIdIOHandlerStack
+    Destination = ':3000'
+    Intercept = IdConnectionIntercept1
+    MaxLineAction = maException
+    Port = 3000
+    DefaultPort = 0
+    ReadTimeout = 1000
+    Left = 259
+    Top = 56
+  end
+  object IdConnectionIntercept1: TIdConnectionIntercept
+    OnDisconnect = IdConnectionIntercept1Disconnect
+    Left = 379
+    Top = 56
+  end
+  object IdThreadComponent1: TIdThreadComponent
+    Active = False
+    Loop = False
+    Priority = tpNormal
+    StopMode = smTerminate
+    OnRun = IdThreadComponent1Run
+    Left = 507
+    Top = 56
+  end
+end

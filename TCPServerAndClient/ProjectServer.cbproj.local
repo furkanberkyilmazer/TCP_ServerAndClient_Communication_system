@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.973,C:\Users\Admin\Desktop\IndyTCP_Deneme\Unit1.h=C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.903,C:\Users\Admin\Desktop\IndyTCP_Deneme\Project2PCH1.h=C:\Users\Admin\Desktop\IndyTCP_Deneme\ProjectServerPCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.791,C:\Users\Admin\Desktop\IndyTCP_Deneme\Project2PCH1.h=C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.988,=C:\Users\Admin\Desktop\IndyTCP_Deneme\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.626,C:\Users\Admin\Desktop\IndyTCP_Deneme\Unit2.cpp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.317,=C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.162,=C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.920,C:\Users\Admin\Desktop\IndyTCP_Deneme\Project2.cbproj=C:\Users\Admin\Desktop\IndyTCP_Deneme\ProjectServer.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.829,C:\Users\Admin\Desktop\IndyTCP_Deneme\Project2.cbproj=C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Project2.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.973,C:\Users\Admin\Desktop\IndyTCP_Deneme\Unit1.cpp=C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.973,C:\Users\Admin\Desktop\IndyTCP_Deneme\Unit1.fmx=C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+  </Transactions>
+</BorlandProject>

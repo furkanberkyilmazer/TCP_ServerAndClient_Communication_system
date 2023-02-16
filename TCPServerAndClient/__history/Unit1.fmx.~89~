@@ -1,0 +1,245 @@
+object FormServer: TFormServer
+  Left = 0
+  Top = 0
+  Caption = 'Server'
+  ClientHeight = 317
+  ClientWidth = 1040
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ListBox2: TListBox
+    Position.X = 879.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 217.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 149.000000000000000000
+    Viewport.Height = 213.000000000000000000
+  end
+  object CheckBox1: TCheckBox
+    IsChecked = True
+    Position.X = 8.000000000000000000
+    Position.Y = 208.000000000000000000
+    TabOrder = 8
+    Text = 'Sunucu A'#231#305'k'
+    OnChange = CheckBox1Change
+  end
+  object RoundRectSendAll: TRoundRect
+    Position.X = 8.000000000000000000
+    Position.Y = 31.000000000000000000
+    Size.Width = 168.000000000000000000
+    Size.Height = 34.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    OnClick = RoundRectSendAllClick
+    OnMouseLeave = RoundRectSendAllMouseLeave
+    object Label1: TLabel
+      Position.X = 48.000000000000000000
+      Position.Y = 9.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Send all clients'
+      TabOrder = 0
+      OnClick = RoundRectSendAllClick
+    end
+  end
+  object RoundRectConnectedClientsCount: TRoundRect
+    Position.X = 8.000000000000000000
+    Position.Y = 73.000000000000000000
+    Size.Width = 168.000000000000000000
+    Size.Height = 34.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    OnClick = RoundRectConnectedClientsCountClick
+    object Label2: TLabel
+      Position.X = 7.000000000000000000
+      Position.Y = 9.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Number of connected clients'
+      TabOrder = 0
+      OnClick = RoundRectConnectedClientsCountClick
+    end
+  end
+  object RoundRectAllClientList: TRoundRect
+    Position.X = 8.000000000000000000
+    Position.Y = 115.000000000000000000
+    Size.Width = 168.000000000000000000
+    Size.Height = 34.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    OnClick = RoundRectAllClientListClick
+    object Label3: TLabel
+      Position.X = 15.000000000000000000
+      Position.Y = 8.000000000000000000
+      RotationCenter.Y = 1.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 18.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'List of connected clients'
+      TabOrder = 0
+      OnClick = RoundRectAllClientListClick
+    end
+  end
+  object RoundRectDisconnectForAllClient: TRoundRect
+    Position.X = 8.000000000000000000
+    Position.Y = 157.000000000000000000
+    Size.Width = 168.000000000000000000
+    Size.Height = 34.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    OnClick = RoundRectDisconnectForAllClientClick
+    object Label4: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 9.000000000000000000
+      Size.Width = 152.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'End connection with clients'
+      TabOrder = 0
+      OnClick = RoundRectDisconnectForAllClientClick
+    end
+  end
+  object Circle1: TCircle
+    Position.X = 127.000000000000000000
+    Position.Y = 264.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    OnClick = Circle1Click
+    object Image1: TImage
+      MultiResBitmap.Height = 24
+      MultiResBitmap.Width = 24
+      MultiResBitmap = <
+        item
+          Width = 24
+          Height = 24
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+            F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            00C249444154484BE594EB0DC2300C84033B002BB109E231043F989032038C01
+            77D446C64A1493AA08D14F3AD98DFC489CB669321CA1BBD309AA32136B61F210
+            DE6ACEC57E1D1D439462FCE827F899063B68D5BB4F16D0BE77DBB0336571FA17
+            68293ACBDA0122363E844DE06E3B88CF6CA2C5B9A6A7B2F1217C029B68618A8D
+            ECC87CFC8BD64BCE7DA01F617734FA883610FDDC256F2162E343F80436F1AFA9
+            1627831BD428C64FE757D14CA9C14DACCEB62672151B620D3121572C27C632E7
+            EF48E9013B875809FA7398A70000000049454E44AE426082}
+          FileName = 'C:\Users\Admin\Desktop\IndyTCP_Deneme\icons8-remove-48.png'
+        end>
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 33.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = Circle1Click
+    end
+  end
+  object RoundRectDisconnect: TRoundRect
+    Position.X = 881.000000000000000000
+    Position.Y = 273.000000000000000000
+    Size.Width = 159.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    OnClick = RoundRectDisconnectClick
+    object Label6: TLabel
+      Position.X = 48.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Disconnect'
+      TabOrder = 0
+      OnClick = RoundRectDisconnectClick
+    end
+  end
+  object Rectangle1: TRectangle
+    CornerType = Bevel
+    Fill.Color = claDarkgray
+    Opacity = 0.699999988079071000
+    Position.X = 184.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 671.000000000000000000
+    Size.Height = 297.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    Stroke.Thickness = 2.000000000000000000
+    XRadius = 2.000000000000000000
+    YRadius = 2.000000000000000000
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      StyleLookup = 'transparentedit'
+      TabOrder = 6
+      Position.Y = 8.000000000000000000
+      Size.Width = 663.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Mesaj'#305'n'#305' Gir:'
+      StyledSettings = [Family, Size]
+    end
+    object Line1: TLine
+      LineType = Top
+      Position.Y = 26.000000000000000000
+      Size.Width = 673.000000000000000000
+      Size.Height = 2.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claAliceblue
+    end
+    object ListBox1: TListBox
+      Position.Y = 32.000000000000000000
+      Size.Width = 673.000000000000000000
+      Size.Height = 255.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'transparentlistboxstyle'
+      TabOrder = 3
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = 'listboxitemstyle'
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 673.000000000000000000
+      Viewport.Height = 255.000000000000000000
+      object RoundRectSend: TRoundRect
+        Position.X = 696.000000000000000000
+        Position.Y = -34.000000000000000000
+        Size.Width = 159.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claNull
+        OnClick = RoundRectSendClick
+        object Label5: TLabel
+          Position.X = 64.000000000000000000
+          Position.Y = 9.000000000000000000
+          Size.Width = 33.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Send'
+          TabOrder = 0
+          OnClick = RoundRectSendClick
+        end
+      end
+    end
+  end
+  object IdTCPServer1: TIdTCPServer
+    Active = True
+    Bindings = <
+      item
+        IP = '192.168.1.236'
+        Port = 3060
+      end>
+    DefaultPort = 3060
+    OnConnect = IdTCPServer1Connect
+    OnDisconnect = IdTCPServer1Disconnect
+    OnExecute = IdTCPServer1Execute
+    Left = 504
+    Top = 136
+  end
+end
